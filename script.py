@@ -44,6 +44,7 @@ try:
 			newhtml=stripper(directory,x)
 			with open(directory+'/'+x,'w') as f:
 				f.write(newhtml.encode('utf8'))
+				print x + ' done'
 except:
 	print 'Invalid Path'
 	sys.exit()
